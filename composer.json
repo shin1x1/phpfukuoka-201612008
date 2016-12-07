@@ -1,0 +1,14 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Acme\\Test\\": "tests/",
+      "Acme\\": "src/"
+    }
+  },
+  "require": {
+    "cakephp/chronos": "@stable"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7"
+  }
+}
