@@ -15,7 +15,7 @@ class UserTest extends \PHPUnit_Framework_TestCase
     {
         $sut = new User(
             new DateOfBirth(Date::create(2000, 1, 1)),
-            new DateOfEnter(Date::create(2016, 11, 27))
+            new DateOfEnter(Date::create(2016, 11, 28))
         );
 
         $this->assertTrue($sut->newUser());
@@ -28,7 +28,7 @@ class UserTest extends \PHPUnit_Framework_TestCase
     {
         $sut = new User(
             new DateOfBirth(Date::create(2000, 1, 1)),
-            new DateOfEnter(Date::create(2016, 11, 26))
+            new DateOfEnter(Date::create(2016, 11, 27))
         );
 
         $this->assertFalse($sut->newUser());

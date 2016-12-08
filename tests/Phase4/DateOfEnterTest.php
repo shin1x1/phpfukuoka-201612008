@@ -28,8 +28,8 @@ class DateOfEnterTest extends \PHPUnit_Framework_TestCase
     public function dataProviderForLessThanTenDays(): array
     {
         return [
-            [false, 11, 26],
-            [true, 11, 27],
+            [false, 11, 27],
+            [true, 11, 28],
         ];
     }
 }
