@@ -1,7 +1,7 @@
 <?php
 namespace Acme\Test;
 
-use Cake\Chronos\Chronos;
+use Cake\Chronos\Date;
 
 /**
  * @package Acme\Test
@@ -13,6 +13,6 @@ trait SetupTrait
         /** @noinspection PhpUndefinedMethodInspection */
         parent::setUp();
 
-        Chronos::setTestNow(Chronos::create(2016, 12, 8, 12, 34, 56));
+        Date::setTestNow(Date::create(2016, 12, 8));
     }
 }
